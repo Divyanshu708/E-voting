@@ -38,12 +38,13 @@ app.use(
   })
 );
 
-const limiter = rateLimit({
-  max: 100,
-  windowMs: 60 * 60 * 1000,
-  message: "too many requrests",
-});
-app.use(limiter);
+// const limiter = rateLimit({
+//   max: 100,
+//   windowMs: 60 * 60 * 1000,
+//   message: "too many requrests",
+// });
+
+// app.use(limiter);
 
 app.use(cookieParser());
 app.use(express.json());

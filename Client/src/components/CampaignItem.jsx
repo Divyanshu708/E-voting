@@ -9,7 +9,7 @@ function CampaignItem({ campaign }) {
 
   const mutation = useMutation({
     mutationFn: (id) =>
-      axios.delete(`http://127.0.0.1:8000/api/campaigns/${id}`),
+      axios.delete(`http://localhost:8000/api/campaigns/${id}`),
     onSuccess: () => {
       queryClient.invalidateQueries(["campaigns"]);
 

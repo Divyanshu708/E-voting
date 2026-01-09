@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import VoteItem from "../../components/VoteItem";
 import { useCampaigns } from "../../services/useCampaignHooks";
-import { useState } from "react";
 
 function Vote() {
   const { isLoading, data } = useCampaigns();

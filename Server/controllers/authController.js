@@ -65,30 +65,37 @@ exports.logout = async function (req, res, next) {
 };
 
 exports.protect = async function (req, res, next) {
-  let token;
+  try {
+    let token;
 
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith("Bearer")
-  ) {
-    token = req.headers.authorization.split(" ")[1];
-    console.log(token);
-  } else if (req.cookies.jwt) {
-    token = req.cookies.jwt;
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith("Bearer")
+    ) {
+      token = req.headers.authorization.split(" ")[1];
+      console.log(token);
+    } else if (req.cookies.jwt) {
+      token = req.cookies.jwt;
+    }
+
+    if (!token || token == "{{jwt}}") {
+      return res.status(401).json({ message: "Not logged in" });
+    }
+
+    const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+    const currentUser = await User.findById(decode.id);
+
+    if (!currentUser) {
+      return res
+        .status(401)
+        .json({ message: "The user belonging to this token no longer exists" });
+    }
+
+    req.user = currentUser;
+    next();
+  } catch (err) {
+    console.log(err);
+    return res.status(401).json({ message: "Invalid or expired token" });
   }
-
-  if (!token || token == "{{jwt}}") {
-    return res.status(401).json({ message: "Not logged in" });
-  }
-
-  const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
-  const currentUser = await User.findById(decode.id);
-
-  if (!currentUser) {
-    return next("The user belonging to this token does no longer exist!");
-  }
-
-  req.user = currentUser;
-  next();
 };

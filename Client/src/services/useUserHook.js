@@ -11,6 +11,8 @@ export function useGetMe() {
         withCredentials: true,
       });
 
+      console.log(res.data);
+
       return res.data;
     },
 

@@ -76,19 +76,19 @@ function NavBar() {
                     <div className="ml-2">
                       Role:
                       <span className="text-blue-950 ml-1">
-                        {data.data.role}
+                        {data?.data?.role}
                       </span>
                     </div>
                     <div className="ml-2">
                       Voter ID:
                       <span className="text-blue-950 ml-1">
-                        {data.data.voterId}
+                        {data?.data?.voterId}
                       </span>
                     </div>
                     <div className="overflow-auto ml-2">
                       Name:
                       <span className="text-wrap text-blue-950 ml-1">
-                        {data.data.name}
+                        {data?.data?.name}
                       </span>
                     </div>
                   </div>

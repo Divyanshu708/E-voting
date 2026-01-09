@@ -23,9 +23,9 @@ exports.getAllUser = async function (req, res, next) {
 };
 
 exports.getMe = async function (req, res, next) {
-  if (!req.user) {
-    return res.status(401).json({ message: "Not logged in" });
-  }
+  // if (!req.user) {
+  //   return res.status(401).json({ message: "Not logged in" });
+  // }
   const me = await User.findById(req.user.id).select("-password");
 
   res.status(200).json({
