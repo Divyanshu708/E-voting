@@ -6,12 +6,9 @@ export function useCampaigns() {
   return useQuery({
     queryKey: ["campaigns"],
     queryFn: async () => {
-      const res = await axios.get(
-        "https://e-voting-jrbp.onrender.com/api/campaigns/",
-        {
-          withCredentials: true,
-        }
-      );
+      const res = await axios.get("http://localhost:8000/api/campaigns/", {
+        withCredentials: true,
+      });
       return res.data.data.campaigns;
     },
     staleTime: 1000 * 60,
