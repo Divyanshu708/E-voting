@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  --toastify-color-progress-light: oklch(35.055% 0.19662 272.067);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.headerStyle {
+  width: 100dvw;
+  position: absolute;
+  top: -40px;
+}
+
+.logo {
+  position: relative;
+  top: -15px;
+  left: 2rem;
+  width: 80px;
+  height: 80px;
+}
+
+.logo2 {
+  position: absolute;
+  top: 0.3rem;
+  left: 5rem;
+  width: 80px;
+  height: 80px;
+}
+
+.navBar {
+  position: relative;
+  height: 2.8rem;
+}
+.navButtons {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: aliceblue;
+  opacity: 0.9;
+}
+
+.navBtn {
+  transition: transform 0.2s ease;
+  margin-top: 0.4rem;
+}
+.navBtn:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.homeImg1 {
+  position: absolute; /* allows moving freely */
+  top: 180px; /* distance from top of header */
+  left: 44%; /* horizontally center */
+  width: 700px;
+  height: auto;
+}
+
+.aboutPage {
+  position: relative;
+}
+
+.AboutTheProject {
+  position: absolute;
+  top: 46rem;
+}
+
+.aboutPara {
+  position: absolute;
+  top: 57rem;
+  left: 15rem;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.footText {
+  font-family: "Instrument Sans", sans-serif;
+  color: aliceblue;
+}
+
+.foot1 {
+  position: absolute;
+}
+
+.foot2 {
+  position: absolute;
+}
+
+.bkc-container::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 70, 144);
+  border-radius: 1rem;
+}
+
+.bkc-container::-webkit-scrollbar {
+  background-color: rgba(0, 0, 77, 0.118);
+  border-radius: 1rem;
+  margin-left: 1px;
+  width: 8px;
+}
+
+.campaign-list {
+  width: 100%;
+}
+
+.add-campaign-model {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.candidate-list::-webkit-scrollbar {
+  display: none;
+}
+
+.ResultCandidateList::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.045);
+  border-radius: 1rem;
+  margin-left: 1px;
+  width: 8px;
+}
+
+.ResultCandidateList::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 148, 148, 0.522);
+  border-radius: 1rem;
+}
+
+.barchart::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.045);
+  border-radius: 1rem;
+  margin-left: 1px;
+  width: 8px;
+}
+
+.barchart::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 148, 148, 0.522);
+  border-radius: 1rem;
+}
+
+.barchart {
+  outline: none !important;
+}
+
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none !important;
+}
+
+.votePageList::-webkit-scrollbar {
+  display: none;
+}

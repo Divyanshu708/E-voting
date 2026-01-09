@@ -1,0 +1,242 @@
+[
+  {
+    "voterId": "VOTER001",
+    "name": "Alice",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER002",
+    "name": "Bob",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER003",
+    "name": "Charlie",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER004",
+    "name": "David",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER005",
+    "name": "Eve",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER006",
+    "name": "Frank",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER007",
+    "name": "Grace",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER008",
+    "name": "Hannah",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER009",
+    "name": "Ian",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER010",
+    "name": "Jack",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER011",
+    "name": "Kara",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER012",
+    "name": "Liam",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER013",
+    "name": "Mona",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER014",
+    "name": "Nina",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER015",
+    "name": "Oscar",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER016",
+    "name": "Paul",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER017",
+    "name": "Quinn",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER018",
+    "name": "Rita",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER019",
+    "name": "Sam",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER020",
+    "name": "Tina",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER021",
+    "name": "Uma",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER022",
+    "name": "Vik",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER023",
+    "name": "Will",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER024",
+    "name": "Xander",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER025",
+    "name": "Yara",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER026",
+    "name": "Zane",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER027",
+    "name": "Ava",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER028",
+    "name": "Ben",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER029",
+    "name": "Chloe",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER030",
+    "name": "Derek",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER031",
+    "name": "Ella",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER032",
+    "name": "Finn",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER033",
+    "name": "Gina",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER034",
+    "name": "Harry",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER035",
+    "name": "Isla",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER036",
+    "name": "Jake",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER037",
+    "name": "Lara",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER038",
+    "name": "Mick",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER039",
+    "name": "Noah",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  },
+  {
+    "voterId": "VOTER040",
+    "name": "Olivia",
+    "role": "user",
+    "password": "$2b$12$ETagXSq7JlALlgBOK5gTyeAAx.6ZfRBy8/ZF35o4wo2DpS5TJHsiK"
+  }
+]
