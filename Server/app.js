@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // your frontend
+    origin: `${process.env.FRONTEND_URL}`,
     credentials: true,
   })
 );

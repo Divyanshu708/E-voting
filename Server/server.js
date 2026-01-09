@@ -14,7 +14,7 @@ mongoose.connect(DB).then((e) => console.log("DB connection successful!"));
 
 const io = socketio(Server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: `${process.env.FRONTEND_URL}`,
     methods: ["GET", "POST", "DELETE"],
   },
 });
