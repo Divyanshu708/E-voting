@@ -6,7 +6,7 @@ import axios from "axios";
 
 function AppInit() {
   const dispatch = useDispatch();
-  console.log("-->", import.meta.env.VITE_API_URL);
+
   const { isSuccess, data } = useQuery({
     queryKey: ["user"],
     queryFn: async () => {
@@ -17,8 +17,6 @@ function AppInit() {
             withCredentials: true,
           }
         );
-
-        console.log("hii2", res.data);
 
         return res.data;
       } catch (err) {
