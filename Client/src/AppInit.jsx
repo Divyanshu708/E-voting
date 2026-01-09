@@ -6,15 +6,17 @@ import axios from "axios";
 
 function AppInit() {
   const dispatch = useDispatch();
+  console.log("-->", import.meta.env.VITE_API_URL);
   const { isSuccess, data } = useQuery({
     queryKey: ["user"],
     queryFn: async () => {
       try {
-        console.log("hii1");
-
-        const res = await axios.get("http://localhost:8000/api/user/me", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          `${import.meta.env.VITE_API_URL}/api/user/me`,
+          {
+            withCredentials: true,
+          }
+        );
 
         console.log("hii2", res.data);
 

@@ -18,7 +18,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 import { io } from "socket.io-client";
-const socket = io.connect("http://localhost:8001");
+const socket = io.connect(`${import.meta.env.VITE_API_URL}`);
 
 function ResultDetails({}) {
   const paramsId = useParams().id;

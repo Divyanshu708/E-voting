@@ -8,27 +8,14 @@ const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const { xss } = require("express-xss-sanitizer");
 const app = express();
-const socketio = require("socket.io");
-const expressServer = app.listen(8001);
 
 const campaignRouter = require("./routes/campaignRouter");
 const blockchainRouter = require("./routes/blockchainRouter");
 const userRouter = require("./routes/userRouter");
 
-const io = socketio(expressServer, {
-  cors: {
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "DELETE"],
-  },
-});
-
 app.use((req, res, next) => {
-  req.io = io;
+  req.io = req.app.get("io");
   next();
-});
-
-io.on("connection", (socket) => {
-  console.log(socket.id, "has connected");
 });
 
 app.use(
@@ -38,13 +25,13 @@ app.use(
   })
 );
 
-// const limiter = rateLimit({
-//   max: 100,
-//   windowMs: 60 * 60 * 1000,
-//   message: "too many requrests",
-// });
+const limiter = rateLimit({
+  max: 100,
+  windowMs: 60 * 60 * 1000,
+  message: "too many requrests",
+});
 
-// app.use(limiter);
+app.use(limiter);
 
 app.use(cookieParser());
 app.use(express.json());

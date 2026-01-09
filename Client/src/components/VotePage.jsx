@@ -15,9 +15,13 @@ function VotePage({ candidate, campaignId, isSubmitting, setIsSubmitting }) {
 
   const mutation = useMutation({
     mutationFn: (body) =>
-      sendData(`http://localhost:8000/api/blockchain/castVote`, body, {
-        withCredentials: true,
-      }),
+      sendData(
+        `${import.meta.env.VITE_API_URL}/api/blockchain/castVote`,
+        body,
+        {
+          withCredentials: true,
+        }
+      ),
     onSuccess: () => {
       queryClient.invalidateQueries(["campaigns"]);
 

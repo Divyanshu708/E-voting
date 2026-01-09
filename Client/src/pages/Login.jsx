@@ -25,7 +25,7 @@ function Login() {
   const mutation = useMutation({
     mutationFn: async (body) => {
       const res = await axios.post(
-        "http://localhost:8000/api/user/login/",
+        `${import.meta.env.VITE_API_URL}/api/user/login/`,
         body,
         {
           withCredentials: true,

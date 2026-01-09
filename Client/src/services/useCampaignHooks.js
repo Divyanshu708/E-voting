@@ -6,9 +6,12 @@ export function useCampaigns() {
   return useQuery({
     queryKey: ["campaigns"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:8000/api/campaigns/", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/campaigns/`,
+        {
+          withCredentials: true,
+        }
+      );
       return res.data.data.campaigns;
     },
     staleTime: 1000 * 60,
@@ -21,7 +24,9 @@ export function useCampaignById(id) {
   return useQuery({
     queryKey: ["campaigns", id],
     queryFn: async () => {
-      const res = await getData(`http://localhost:8000/api/campaigns/${id}`);
+      const res = await getData(
+        `${import.meta.env.VITE_API_URL}/api/campaigns/${id}`
+      );
       return res.data.data.campaigns;
     },
     staleTime: 1000 * 60,
@@ -36,7 +41,7 @@ export function useCampaignResults(id) {
     queryKey: ["campaigns", id],
     queryFn: async () => {
       const res = await getData(
-        `http://localhost:8000/api/campaigns/${id}/results`
+        `${import.meta.env.VITE_API_URL}/api/campaigns/${id}/results`
       );
       return res.data.data;
     },

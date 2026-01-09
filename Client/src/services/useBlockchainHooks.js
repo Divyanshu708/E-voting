@@ -6,7 +6,9 @@ export function useBlockchainById(id) {
   return useQuery({
     queryKey: ["blocks", id],
     queryFn: async () => {
-      const res = await getData(`http://localhost:8000/api/blockchain/${id}`);
+      const res = await getData(
+        `${import.meta.env.VITE_API_URL}/api/blockchain/${id}`
+      );
       return res.data.data;
     },
     staleTime: 0,
@@ -20,7 +22,7 @@ export function useBlockchainValidate(id) {
     queryKey: ["message", id],
     queryFn: async () => {
       const res = await getData(
-        `http://localhost:8000/api/blockchain/${id}/validate`
+        `${import.meta.env.VITE_API_URL}/api/blockchain/${id}/validate`
       );
 
       return res.data.data;
@@ -37,7 +39,9 @@ export function useHasVoted(campaignId) {
     queryKey: ["hasVoted"],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:8000/api/blockchain/hasVoted?campaignId=${campaignId}`,
+        `h${
+          import.meta.env.VITE_API_URL
+        }/api/blockchain/hasVoted?campaignId=${campaignId}`,
         {
           withCredentials: true,
         }

@@ -14,7 +14,7 @@ function AddCampaignModel({ setShowAddCampaign }) {
 
   const mutation = useMutation({
     mutationFn: (body) =>
-      sendData("http://localhost:8000/api/campaigns/", body),
+      sendData(`${import.meta.env.VITE_API_URL}/api/campaigns/`, body),
     onSuccess: () => {
       queryClient.invalidateQueries(["campaigns"]);
 

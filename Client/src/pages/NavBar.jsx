@@ -18,7 +18,7 @@ function NavBar() {
   if (isLoading) return;
 
   async function handleLogout() {
-    await axios.get("http://localhost:8000/api/user/logout", {
+    await axios.get(`${import.meta.env.VITE_API_URL}/api/user/logout`, {
       withCredentials: true,
     });
     dispatch(logout());

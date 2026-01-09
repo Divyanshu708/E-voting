@@ -7,9 +7,12 @@ export function useGetMe() {
     queryKey: ["user"],
     queryFn: async () => {
       // const res = await getData("http://localhost:8000/api/user/me");
-      const res = await axios.get(`http://localhost:8000/api/user/me`, {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/user/me`,
+        {
+          withCredentials: true,
+        }
+      );
 
       console.log(res.data);
 
