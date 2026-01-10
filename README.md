@@ -173,9 +173,8 @@ Make sure to configure:
 
 ---
 
-## 📸 Screenshots (optional)
-
-*Add screenshots here if you want to showcase the UI.*
+## 📸 Screenshots 
+<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/94db0a46-28ee-4db2-8ebd-ff455c588495" />
 
 ---
 
@@ -201,9 +200,3 @@ Feel free to use and modify.
 
 If you like this project, give it a **star ⭐** on GitHub!
 
----
-
-If you want, I can now:
-
-* format this as a downloadable `README.md`
-* or customize it with your **actual repo name & links**
