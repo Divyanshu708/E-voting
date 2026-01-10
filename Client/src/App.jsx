@@ -39,7 +39,7 @@ function App() {
         <AppInit />
         <a
           className="group fixed left-11 bottom-11 cursor-pointer z-10 "
-          href="https://github.com/"
+          href="https://github.com/Divyanshu708/E-voting"
         >
           <img
             className="fixed left-11 bottom-11 scale-210 hover:scale-230 transition-all z-10"
