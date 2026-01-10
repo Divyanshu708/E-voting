@@ -70,7 +70,7 @@ function VotePage({ candidate, campaignId, isSubmitting, setIsSubmitting }) {
         onClick={handleVote}
         // disabled={authState.role === "admin" ? true : false}
         disabled={
-          authState.role === "admin" || data.hasVoted || isSubmitting
+          authState.role === "admin" || data?.hasVoted || isSubmitting
             ? true
             : false
         }
