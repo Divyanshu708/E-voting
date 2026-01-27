@@ -15,7 +15,7 @@ function AppInit() {
           `${import.meta.env.VITE_API_URL}/api/user/me`,
           {
             withCredentials: true,
-          }
+          },
         );
 
         return res.data;

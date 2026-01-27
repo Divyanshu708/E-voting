@@ -34,20 +34,13 @@ exports.login = async function (req, res, next) {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
 
-  // res.cookie("jwt", token, {
-  //   httpOnly: true,
-  //   sameSite: "lax",
-  //   secure: false,
-  //   path: "/",
-  // });
-
   res.cookie("jwt", token, {
     expires: new Date(
-      Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
+      Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000,
     ),
     httpOnly: true,
-    secure: true,
-    sameSite: "none",
+    secure: process.env.NODE_ENV !== "development",
+    sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
   });
 
   user.password = undefined;
@@ -60,9 +53,14 @@ exports.login = async function (req, res, next) {
 };
 
 exports.logout = async function (req, res, next) {
-  res.clearCookie("jwt");
+  res.clearCookie("jwt", {
+    expires: new Date(0),
+    httpOnly: true,
+    secure: process.env.NODE_ENV !== "development",
+    sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
+  });
+
   res.status(200).json({ status: "success" });
-  next();
 };
 
 exports.protect = async function (req, res, next) {

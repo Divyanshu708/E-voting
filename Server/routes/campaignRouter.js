@@ -10,7 +10,8 @@ const { protect } = require("../controllers/authController");
 
 const router = express.Router();
 
-router.route("/").get(protect, getAllCampaigns).post(createCampaign);
+router.route("/").get(getAllCampaigns);
+router.route("/").post(protect, createCampaign);
 
 router.route("/:id").get(getCampaigns).delete(deleteCampaigns);
 

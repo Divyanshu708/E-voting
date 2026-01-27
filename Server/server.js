@@ -1,12 +1,12 @@
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
+
 const app = require("./app");
 const http = require("http");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
 const socketio = require("socket.io");
 
 const Server = http.createServer(app);
-
-dotenv.config({ path: "./config.env" });
 
 const DB = process.env.DB;
 
