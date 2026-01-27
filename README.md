@@ -5,24 +5,22 @@
 A secure, real-time voting platform inspired by blockchain principles.
 Each vote is linked like a block in a chain, making tampering easy to detect during re-evaluation.
 
-
 ## 🚀 Features
 
-* 🔐 Secure authentication for **Admin** and **Users**
-* 🧱 **Blockchain-inspired vote storage**
-* 🔎 **Re-evaluation system** to detect tampered votes
-* ⚡ **Real-time updates** using Socket.IO
-* 🗳️ One-vote-per-user per campaign
-* 👑 Admin-only controls for managing campaigns
-
+- 🔐 Secure authentication for **Admin** and **Users**
+- 🧱 **Blockchain-inspired vote storage**
+- 🔎 **Re-evaluation system** to detect tampered votes
+- ⚡ **Real-time updates** using Socket.IO
+- 🗳️ One-vote-per-user per campaign
+- 👑 Admin-only controls for managing campaigns
 
 ## 🏗️ Tech Stack
 
-* **Frontend:** React
-* **Backend:** Node.js, Express
-* **Database:** MongoDB
-* **Realtime:** Socket.IO
-* **Auth:** JWT + Cookies
+- **Frontend:** React
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Realtime:** Socket.IO
+- **Auth:** JWT + Cookies
 
 ---
 
@@ -60,6 +58,7 @@ npm install
 Create a `config.env` file in the **backend** folder:
 
 ```env
+NODE_ENV=development
 PORT=8000
 DB=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
@@ -122,10 +121,10 @@ VOTER040 / pass1234
 
 ### 👤 Users
 
-* Must be **logged in** to vote
-* Can vote **only once per campaign**
-* Cannot vote again in the same campaign
-* To vote again, log in with **another user account**
+- Must be **logged in** to vote
+- Can vote **only once per campaign**
+- Cannot vote again in the same campaign
+- To vote again, log in with **another user account**
 
 ---
 
@@ -134,27 +133,26 @@ VOTER040 / pass1234
 Admins **cannot vote**.
 They can only:
 
-* ➕ Add campaigns
-* ❌ Delete campaigns
-* 👥 Manage candidates
-* 🔎 **Re-evaluate blocks** to check for tampering
+- ➕ Add campaigns
+- ❌ Delete campaigns
+- 👥 Manage candidates
+- 🔎 **Re-evaluate blocks** to check for tampering
 
 ---
 
 ## 🔐 How the Blockchain-Inspired System Works
 
-* Every vote is saved as a **block**
-* Each block is linked to the previous one
-* If someone tampers with a vote:
-
-  * The chain becomes invalid
-  * The **re-evaluation system** detects it instantly
+- Every vote is saved as a **block**
+- Each block is linked to the previous one
+- If someone tampers with a vote:
+  - The chain becomes invalid
+  - The **re-evaluation system** detects it instantly
 
 This ensures:
 
-* Transparency
-* Tamper detection
-* Trust in the voting process
+- Transparency
+- Tamper detection
+- Trust in the voting process
 
 ---
 
@@ -162,18 +160,19 @@ This ensures:
 
 The project supports deployment on:
 
-* **Frontend:** Netlify / Vercel
-* **Backend:** Render
+- **Frontend:** Netlify / Vercel
+- **Backend:** Render
 
 Make sure to configure:
 
-* CORS
-* Cookies (`secure: true`, `sameSite: "none"`)
-* Environment variables
+- CORS
+- Cookies (`secure: true`, `sameSite: "none"`)
+- Environment variables
 
 ---
 
-## 📸 Screenshots 
+## 📸 Screenshots
+
 <img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/94db0a46-28ee-4db2-8ebd-ff455c588495" />
 
 ---
@@ -199,4 +198,3 @@ Feel free to use and modify.
 ## ⭐ Support
 
 If you like this project, give it a **star ⭐** on GitHub!
-
