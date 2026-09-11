@@ -14,7 +14,9 @@ function AddCampaignModel({ setShowAddCampaign }) {
 
   const mutation = useMutation({
     mutationFn: (body) =>
-      sendData(`${import.meta.env.VITE_API_URL}/api/campaigns/`, body),
+      sendData(`${import.meta.env.VITE_API_URL}/api/campaigns/`, body, {
+        withCredentials: true,
+      }),
     onSuccess: () => {
       queryClient.invalidateQueries(["campaigns"]);
 
@@ -43,14 +45,14 @@ function AddCampaignModel({ setShowAddCampaign }) {
   function handleChange(id, field, value) {
     setCandidatesList((candidatesList) =>
       candidatesList.map((el) =>
-        el.id === id ? { ...el, [field]: value } : el
-      )
+        el.id === id ? { ...el, [field]: value } : el,
+      ),
     );
   }
 
   function handleDelete(id) {
     setCandidatesList((candidatesList) =>
-      candidatesList.filter((el) => el.id !== id)
+      candidatesList.filter((el) => el.id !== id),
     );
   }
 
